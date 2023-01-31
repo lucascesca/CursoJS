@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remuneração por Hora</title>
+    <link rel="stylesheet" href="rem.css">
+</head>
+<body>
+    <header><p><strong>Calcule a sua remuneração do mês!</strong></p></header>
+    <section>
+        <div>
+        <p>Remuneração Bruta: R$ <input type="number" name="txtr" id="txtr"></p>
+        <p>Dias trabalhados no mês: <input type="number" name="txtd" id="txtd"></p>
+        <p>Horas trabalhadas por dia: <input type="number" name="txth" id="txth"></p>
+        <p>Taxa de Seguridde Social: <input type="number" name="txti" id="txti"> %</p>
+        <p>Valor Vale-Alimentação por dia: R$ <input type="number" name="txtva" id="txtva"></p>
+        <p>Valor Passagem: R$ <input type="number" name="txtvt" id="txtvt"></p>
+        <p>Passagens Usadas por Dia: <input type="number" name="txtnvt" id="txtnvt"></p>
+        <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res"><br>Preencha os dados acima!</div>
+    </section>
+    <footer> &copy; LucasCesca </footer>
+    <script src="rem.js"></script>
+</body>
+</html>

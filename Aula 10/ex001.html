@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background: black;
+        }
+        div#area {
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        <!--Esses eventos podem ser retirados do HTML e colocados no JavaScript por meio do comando Listener-->
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+       /* a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+       Esses comandos substituem os citados no HTML, podendo-se, dessa forma, apagá-los do HTML.
+        */
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'purple'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'red'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+    </script>
+</body>
+</html>

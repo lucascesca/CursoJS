@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font: normal 18pt Times;
+        }
+        div#area {
+            font: bolder 20pt Georgia;
+            background: white;
+            color: black;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+        }
+        div#res {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        input {
+            font: normal 18pt Times;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Baba Yaga!</h1>
+    <p>Este é um código para treinar tudo que aprendi até o momento.</p>
+    <p>Digite abaixo valores que deseja multiplicar.</p>
+    <input type="number" name="txtn1" id="txtn1"> *
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <div id="res">Resultado</div>
+    <div id="area">Para interagir!</div>
+    <script>
+        nome = window.prompt('Digite um nome')
+        document.write(`O nome ${nome.toUpperCase()} possui ${nome.length} letras.`)
+        var na1 = Number(prompt('Diga-me a tua idade'))
+        var na2 = Number(prompt('Que dia é hoje?'))
+        var resale = na1 * na2
+        window.alert(`A multiplicação dos dados equivale a ${resale.toLocaleString('pt-BR', {style:'currency', currency:'USD'})}`)
+        function multiplicar() {
+            var tn1 = document.querySelector('input#txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            var res = document.querySelector('div#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 * n2
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a <strong>${s}</strong>.`
+        }
+        var int = document.querySelector('div#area')
+        int.addEventListener('click', clicar)
+        int.addEventListener('mouseenter', entrar)
+        int.addEventListener('mouseout', sair)
+        
+        function clicar() {
+            int.innerText = 'Clicou!'
+            int.style.background = 'red'
+        }
+        function entrar() {
+            int.innerText = 'Entrou!'
+            int.style.background = 'blue'
+        }
+        function sair() {
+            int.innerText = 'Saiu!'
+            int.style.background = 'purple'
+        }
+    </script>
+</body>
+</html>

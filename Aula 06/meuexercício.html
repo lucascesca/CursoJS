@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <style>
+        body {
+            background-color: black;
+            color: yellow;
+            font: normal 18pt Times;
+        }
+        h2 {
+            color: white;
+            font: normal 18pt Georgia;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estou criando este site do zero!</h1>
+    <p>Esta é minha <strong>primeira tentativa</strong> de criar algo do zero sem nenhum suporte.</p>
+    <p>Estou, de fato, gostando desta jornada. Nunca me imaginei criando algo, ou sendo prestativo para algo, contudo acredito que estou evoluindo bem e irei continuar me motivando.</p>
+  <h2>Não é díficil! Persista!</h2>
+  <script>
+        var nome = window.prompt('Como está a sua evolução?')
+        window.alert('A minha evolução está ' + nome + '.')
+        var n1 = Number.parseInt(window.prompt('Que dia é hoje?'))
+        var n2 = Number(window.prompt('Que dia foi ontem?'))
+        var s = n1 + n2
+        window.alert(`A soma das datas equivale a ${s.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}!`)
+        document.writeln(`A sua evolução está ${nome.toLowerCase()}, por isso trate de estudar mais!`)
+        var prova =  Number(window.prompt('Qual nota você tirará na prova?'))
+        document.writeln(`Se você tirar ${prova} na prova, você será <strong>${prova > 90 ? 'aprovado' : 'reprovado'}</strong>!<br/>`)
+    </script>
+</body>
+</html>

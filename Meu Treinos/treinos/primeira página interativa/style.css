@@ -1,0 +1,26 @@
+body {
+    background: rgb(203, 233, 203);
+    color: black;
+    font: bolder 16pt Times;
+}
+header {
+    color: black;
+    text-align: center;
+}
+section {
+    background: white;
+    width: 600px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 2px 2px 2px 5px rgb(43, 42, 42);
+}
+footer{
+    color: black;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}

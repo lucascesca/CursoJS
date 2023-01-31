@@ -1,0 +1,25 @@
+body {
+    background: rgb(237, 86, 86);
+}
+header {
+    color: antiquewhite;
+    font: italic 18pt  Times;
+    text-align: center;
+}
+section {
+    background: whitesmoke;
+    border-radius: 15px;
+    margin: auto;
+    padding: 10px;
+}
+select#sel {
+    width: 150px;
+}
+footer {
+    color: antiquewhite;
+    text-align: center;
+    font: italic;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}

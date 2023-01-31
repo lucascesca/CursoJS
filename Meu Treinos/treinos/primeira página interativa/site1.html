@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Remuneração</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <header>
+        <h1>
+            Calcule a sua remuneração por hora!
+        </h1>
+    </header>
+    <section>
+        <div id="calc"></div>
+        <p>Digite abaixo as seguintes informações:</p>
+        <p>Remuneração mensal em reais:
+            <input type="number" name="txts" id="txts" min="0">
+        </p>
+        <p>Quantidade de dias Trabalhados:
+            <input type="number" name="txtd" id="txtd" min="0" max="31">
+        </p>
+        <p>Horas trabalhadas por dia:
+            <input type="number" name="txth" id="txth" min="0" max="24">
+        </p>
+        <p>
+            <input type="button" value="verificar" onclick="verificar()">
+        </p>
+        <div id="res">Preencha os dados acima para obter o resultado!</div>
+    </section>
+    <footer>
+        <p>&copy; LucasCesca</p>
+    </footer>
+    <script src="bymyself.js"></script>
+</body>
+</html>

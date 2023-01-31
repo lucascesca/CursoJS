@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 18pt Georgia;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá <strong>${nome}</strong>! seu nome tem ${nome.length} letras.<br/>`) // a tag <strong></strong> serve para negrito
+        document.write(`Seu nome maiúsculas é ${nome.toUpperCase()}<br/>`) //a tag <br/> significa break roll e serve para gerar quebra de linha.
+        document.write(`Seu nome minúsculo é ${nome.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>

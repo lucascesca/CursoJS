@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title> <!-- Título na aba do navegador-->
+    <style>
+        body {
+            background-color: rgb(112, 28, 192); /* Assim se faz um comentário na CSS */
+            color: black;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+   <h1>Olá, mundo!</h1> <!-- Assim se faz um comentário na HTML-->
+   <p>Já me livrei da maldição.</p>
+   <script>
+    var n1 = Number(window.prompt('Digite um número'))//no comando prompt números tbm são string
+    var n2 = Number(window.prompt('Digite outro número'))
+    /* para transformar uma string em number pode-se usar três comandos:
+    Number.parseInt(n) para transformar em número inteiro;
+    NUmber.parseFloat(n) para transformar em número real;
+    Number(n) transforma tanto em inteiro quanto em real automáticamente.
+    
+    Para transformar number para string, usa-se os seguintes comandos:
+    String(n)
+    n.String()*/
+    var s = n1 + n2
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // outra opção: window.alert('O resultado dos valores é ' + s)
+    // quando é number + number o + serve para adicionar;
+    // sting + string + serve para concatenar.
+   </script>
+</body>
+</html>

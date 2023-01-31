@@ -1,0 +1,27 @@
+body{
+    background: rgb(125, 67, 67);
+}
+header {
+    color: white;
+    text-align: center;
+}
+section {
+    background: white;
+    font: normal 18pt Times;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    border-radius: 10%;
+}
+div {
+    text-align: center;
+    padding: 8px;
+}
+footer {
+    color: white;
+    text-align: center;
+    font: italic;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
